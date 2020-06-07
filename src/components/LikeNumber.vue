@@ -5,18 +5,23 @@
   </div>
 </template>
 
-
 <script>
 export default {
   data: function() {
     return {
-      number: 5
+      number: 5,
     };
   },
   methods: {
-    imcrement: function(){
-      this.number += 1
-    }
-  }
+    imcrement: function() {
+      this.number += 1;
+    },
+  },
 };
 </script>
+
+<style scoped>
+div {
+  border: 1px solid red;
+}
+</style>
