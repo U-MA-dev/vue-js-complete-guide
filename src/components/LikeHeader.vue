@@ -3,6 +3,8 @@
     <slot name="title">
       デフォルトのタイトル
     </slot>
+    <slot></slot>
+    <!-- <slot name="default"></slot> -->
     <hr />
     <p>いいねの数</p>
     <slot name="number"></slot>
