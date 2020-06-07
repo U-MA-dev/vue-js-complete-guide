@@ -29,7 +29,8 @@ export default {
   methods: {
     imcrement: function() {
       // 親のイベントを実行している
-      this.$emit("my-click", this.totalNumber + 1);
+      this.totalNumber += 1;
+      // this.$emit("my-click", this.totalNumber + 1);
       // this.$emit("my-click");
     },
   },
