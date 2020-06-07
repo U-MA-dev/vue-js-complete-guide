@@ -7,7 +7,20 @@
 
 <script>
 export default {
-  props: ["totalNumber"],
+  props: {
+    // totalNumber: Number,
+    totalNumber: {
+      type: Number,
+      required: false,
+      default: 10,
+      // 配列を返す場合にfuncにする
+      // default: function() {
+      //   return {
+      //     number: 5,
+      //   };
+      // },
+    },
+  },
   computed: {
     halfNumber() {
       return this.totalNumber / 2;
