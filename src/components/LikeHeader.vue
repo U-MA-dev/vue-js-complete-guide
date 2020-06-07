@@ -1,9 +1,5 @@
 <template>
   <div>
-    <slot :user="user"> </slot>
-    <slot></slot>
-    <hr />
-    <p>いいねの数</p>
     <slot></slot>
   </div>
 </template>
