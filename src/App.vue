@@ -2,8 +2,8 @@
   <div>
     <LikeHeader></LikeHeader>
     <p>{{ number }}</p>
-    <LikeNumber :total-number="number" test-props="test"></LikeNumber>
-    <LikeNumber></LikeNumber>
+    <LikeNumber :total-number="number" @my-click="incrementNumber"></LikeNumber>
+    <LikeNumber :total-number="number"></LikeNumber>
   </div>
 </template>
 
@@ -18,6 +18,11 @@ export default {
   },
   components: {
     LikeHeader: LikeHeader,
+  },
+  methods: {
+    incrementNumber: function(event) {
+      this.number = event;
+    },
   },
 };
 </script>

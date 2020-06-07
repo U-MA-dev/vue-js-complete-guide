@@ -20,9 +20,6 @@ export default {
       //   };
       // },
     },
-    testProps: {
-      type: String,
-    },
   },
   computed: {
     halfNumber() {
@@ -31,7 +28,9 @@ export default {
   },
   methods: {
     imcrement: function() {
-      this.number += 1;
+      // 親のイベントを実行している
+      this.$emit("my-click", this.totalNumber + 1);
+      // this.$emit("my-click");
     },
   },
 };
