@@ -7,6 +7,7 @@
 
 <script>
 export default {
+  props: ["number"],
   methods: {
     imcrement: function() {
       this.number += 1;
