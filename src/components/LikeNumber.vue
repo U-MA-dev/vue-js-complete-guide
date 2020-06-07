@@ -20,6 +20,9 @@ export default {
       //   };
       // },
     },
+    testProps: {
+      type: String,
+    },
   },
   computed: {
     halfNumber() {
