@@ -8,7 +8,9 @@
     <button @click="currentComponent = 'About'">About</button>
     <!-- <Home v-if="currentComponent === 'Home'"></Home>
     <About v-else-if="currentComponent === 'About'"></About> -->
-    <component :is="currentComponent"></component>
+    <keep-alive>
+      <component :is="currentComponent"></component>
+    </keep-alive>
   </div>
 </template>
 
