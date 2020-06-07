@@ -1,6 +1,6 @@
 <template>
   <div>
-    <slot name="title">
+    <slot name="title" :user="user">
       デフォルトのタイトル
     </slot>
     <slot></slot>
@@ -13,7 +13,14 @@
 
 <script>
 export default {
-  props: ["headerText"],
+  data: function() {
+    return {
+      user: {
+        firstName: "Jack",
+        lastName: "Donald",
+      },
+    };
+  },
 };
 </script>
 
